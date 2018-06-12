@@ -12,3 +12,9 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://user:password123@localhost:8761/eureka
+
+
+zuul:
+  routes:
+    microservice-provider-user: /user/**
+  ignored-services: '*'     ## 多个服务 用逗号隔开

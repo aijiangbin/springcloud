@@ -1,0 +1,13 @@
+password: '{cipher}7783042712f8dc5f8afee9f8825dcd3d6733a7a6560188e6f247bbdc38573c71'
+password1: 1233
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    lease-renewal-interval-in-seconds: 5
+

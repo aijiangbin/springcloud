@@ -1,0 +1,8 @@
+
+  
+serviceName: microservice-config-client1
+from: fromClent   ##经过测试 优先加载service的配置，在加载本地配置， 本地的配置不会覆盖掉远程的配置
+
+
+
+  

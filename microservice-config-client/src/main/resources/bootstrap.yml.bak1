@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: microservice-config-client
+  cloud:
+    config:
+      name: foobar
+      profile: dev
+      label: master
+      uri: http://localhost:8080/
+server:
+  port: 8081
+
+  
